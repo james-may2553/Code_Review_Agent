@@ -7,10 +7,10 @@ load_dotenv()
 
 def review_file(file_name: str, diff_chunk: str):
     mock = os.getenv("MOCK_REVIEW", "false")
-    print(f"MOCK_REVIEW value: {mock}")  # 👈 ADD THIS
+    print(f"MOCK_REVIEW value: {mock}")
 
     if mock.lower() == "true":
-        print("USING MOCK REVIEW")  # 👈 ADD THIS
+        print("USING MOCK REVIEW")
         return [
             {
                 "file": file_name,
